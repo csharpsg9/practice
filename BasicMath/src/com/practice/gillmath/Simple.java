@@ -8,12 +8,8 @@ public class Simple {
 	private Integer subtract(int x, int y)
 	{	return x - y;	}
 	
-	private void getOSDetails()
-	{
-		System.out.println(System.getProperty("os.name"));
-		System.out.println(System.getProperty("os.version"));
-		System.out.println(System.getProperty("os.arch"));
-	}
+	private Integer multiply(int x, int y)
+	{	return x * y;	}
 
 	public static void main(String[] args) {
 		Simple numbers = new Simple();
@@ -21,7 +17,7 @@ public class Simple {
 		
 		System.out.println(numbers.add(number1, number2));
 		System.out.println(numbers.subtract(number1, number2));
-		numbers.getOSDetails();
+		System.out.println(numbers.multiply(number1, number2));
 	}
 
 }
