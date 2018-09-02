@@ -13,7 +13,7 @@ public class Simple {
 
 	public static void main(String[] args) {
 		Simple numbers = new Simple();
-		int number1 = 6, number2 = -5;
+		int number1 = 16, number2 = -5;
 		
 		System.out.println(numbers.add(number1, number2));
 		System.out.println(numbers.subtract(number1, number2));
