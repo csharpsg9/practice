@@ -16,9 +16,8 @@ public class Simple {
 
 	public static void main(String[] args) {
 		Simple numbers = new Simple();
-		int number1 = -5, number2 = 22;
+		int number1 = -543, number2 = 22;
 		
-		System.out.println("Basic Math functions -");
 		System.out.println(numbers.add(number1, number2));
 		System.out.println(numbers.subtract(number1, number2));
 		numbers.getOSDetails();
