@@ -22,7 +22,7 @@ public class Utils {
 	public static final String stockFilePath = "C://ListOfStocks//";
 	public static final String userReportChoice = "Which report do you want to see?"; 
 		                                    
-	public static void serializeFileList(StockFileList stockList)
+	public static void setStockFileList(StockFileList stockList)
 	{
 		for (Map.Entry<Integer, String> entry : stockList.stockFileList.entrySet()) {	
 			Integer key = entry.getKey();

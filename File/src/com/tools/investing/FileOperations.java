@@ -29,9 +29,8 @@ public class FileOperations implements IMenu, IProcessUserChoice {
 				Utils.writeToFile(Utils.createFile(stockSymbol), Scraper.getStockPrice(stockSymbol));
 			}
 			
-			Utils.serializeFileList(listOfStocks);
-			
-
+			//Utils.serializeFileList(listOfStocks);
+			Utils.setStockFileList(listOfStocks);
 			
 			/*
 			for (Integer i = 0; i < numberOfSymbols; i++) {
