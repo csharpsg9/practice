@@ -11,7 +11,7 @@ public class FileOperations implements IMenu, IProcessUserChoice {
 	public void setStockList() {
 		//Scanner howManyTickerSymbols = null;
 		
-			Scanner howManyTickerSymbols = howManyTickerSymbols = new Scanner(System.in);
+			Scanner howManyTickerSymbols = new Scanner(System.in);
 			String stockSymbol = "";
 			StockFileList listOfStocks = new StockFileList();
 			int numberOfSymbols = 0;
