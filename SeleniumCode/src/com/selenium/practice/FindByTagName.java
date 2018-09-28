@@ -8,17 +8,23 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class FindByTagName {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver;
 		driver = new FirefoxDriver();
 		
-		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		String baseURL = "http://demostore.x-cart.com/";
 		driver.manage().window().maximize();
 		driver.get(baseURL);
-
-		driver.findElement(By.tagName("a")).click();
-
+		//Thread.sleep(15000);
+		
+		//driver.findElement(By.tagName("span")).click();
+		//driver.findElement(By.xpath("//span[@class='country-indicator']")).click();
+		driver.findElement(By.linkText("Coming soon")).click();
+		driver.findElement(By.linkText("New!")).click();
+		driver.findElement(By.linkText("Home")).click();
+		driver.findElement(By.linkText("Terms & Conditions")).click();
+		Thread.sleep(2000);
 	}
 
 }
