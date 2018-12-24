@@ -13,15 +13,19 @@ public class Utils {
 	public static final String userReportChoice = "Which report do you want to see?"; 
 	public static String filePath = "C://Users//shuai_000//Desktop//stocks//";		                                    
 	
-	public static void displayMainMenu() {
+	public static TreeMap<Integer, String> createMainMenuList(){
 		TreeMap<Integer, String> mainMenu = new TreeMap<Integer, String>();
-
-		System.out.println("\nWelcome to the Stock Price Report Generator");
-		System.out.println("Please enter your choice\n");
-		
 		mainMenu.put(1, "View Stock File List");
 		mainMenu.put(2, "Enter Stock symbol");
 		mainMenu.put(3, "Exit");
+		return mainMenu;
+	}
+	
+	public static void displayMainMenu() {
+		TreeMap<Integer, String> mainMenu = createMainMenuList();
+
+		System.out.println("\nWelcome to the Stock Price Report Generator");
+		System.out.println("Please enter your choice\n");
 		
 		for (Map.Entry<Integer, String> entry : mainMenu.entrySet()) {	
 			Integer key = entry.getKey();
