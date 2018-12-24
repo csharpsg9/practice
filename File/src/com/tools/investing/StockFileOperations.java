@@ -27,10 +27,9 @@ public class StockFileOperations
 			Scanner howManyTickerSymbols = new Scanner(System.in);
 			String stockSymbol = "";
 			StockFileOperations listOfStocks = new StockFileOperations();
-			int numberOfSymbols = 0;
-
+			//int numberOfSymbols = 0;
 			System.out.println("How many ticker symbols do you want to enter? ");
-			numberOfSymbols = howManyTickerSymbols.nextInt();
+			int numberOfSymbols = howManyTickerSymbols.nextInt();
 			
 			ArrayList<Scanner> userInputs = new ArrayList<Scanner>(numberOfSymbols);
 			
@@ -42,6 +41,7 @@ public class StockFileOperations
 				fileOperations.writeToFile(fileOperations.createFile(stockSymbol), Scraper.getStockPrice(stockSymbol));
 			}
 			listOfStocks.setStockFileList(listOfStocks);
+			//howManyTickerSymbols.close();
 	}
 	
 	public void viewStockFileList() {

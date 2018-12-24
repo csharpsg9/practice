@@ -44,10 +44,10 @@ public class Utils {
 	public static void startStockAnalysisProject(){
 		StockFileOperations stockFileOperations = new StockFileOperations();
 		boolean isDisplayed = true;
-
+		Scanner userChoice = new Scanner(System.in);
+		
 		do {
-			Utils.displayMainMenu();
-			Scanner userChoice = new Scanner(System.in);
+			displayMainMenu();
 			int choice = userChoice.nextInt();
 
 				if (choice == 1) {
@@ -58,6 +58,7 @@ public class Utils {
 					isDisplayed = false;
 				}
 		} while(isDisplayed);
+		userChoice.close();
 
 		System.out.print("\nThank you for using Stock Price Report Generator.\n");
 	}
