@@ -6,88 +6,63 @@ import java.io.*;
 import com.tools.webutils.*;
 import com.test.email.*;
 
-public class FileOperations implements IMenu, IProcessUserChoice {
+public class FileOperations{
 	
-	public void setStockList() {
-		//Scanner howManyTickerSymbols = null;
+	public void writeToFile(File file, Stock myStock) {
 		
-			Scanner howManyTickerSymbols = new Scanner(System.in);
-			String stockSymbol = "";
-			StockFileList listOfStocks = new StockFileList();
-			int numberOfSymbols = 0;
+		DecimalFormat decimalFormat = new DecimalFormat("#.00");
+		String content = Utils.getSimpleDateFormat().format(new Date()) + ", " + myStock.stockSymbol + ", " + decimalFormat.format(myStock.price);
 
-			System.out.println("How many ticker symbols do you want to enter? ");
-			numberOfSymbols = howManyTickerSymbols.nextInt();
-			
-			ArrayList<Scanner> userInputs = new ArrayList<Scanner>(numberOfSymbols);
-			
-			for (Integer i = 0; i < numberOfSymbols; i++) {
-				userInputs.add(new Scanner(System.in));
-				System.out.println("Enter a Stock Symbol: ");
-				stockSymbol = userInputs.get(i).nextLine();
-				listOfStocks.stockFileList.put(i, stockSymbol +".txt");	
-				Utils.writeToFile(Utils.createFile(stockSymbol), Scraper.getStockPrice(stockSymbol));
+		try {
+			FileWriter fileWriter = new FileWriter(file, true);
+			BufferedWriter bufferWriter = new BufferedWriter(fileWriter);
+			bufferWriter.write(content + "\n");
+			bufferWriter.close();
+		} catch (IOException e) {
+			System.out.println(Utils.error);
+			e.printStackTrace();
+		}
+	}
+	
+	public File createFile(String nameOfFile) {
+		
+		File file = new File(Utils.filePath + nameOfFile + ".txt");
+		FileOutputStream fileOutputStream = null;
+		String fileTitle = "Stock Price History Report\n";
+
+		try {
+			if (file.createNewFile()) {
+				fileOutputStream = new FileOutputStream(file);
+				byte[] contentInBytes = fileTitle.getBytes();
+				fileOutputStream.write(contentInBytes);
+				fileOutputStream.flush();
+				fileOutputStream.close();
+				System.out.println("File created.");
+			} else {
+				System.out.println("File updated.");
 			}
-			
-			//Utils.serializeFileList(listOfStocks);
-			Utils.setStockFileList(listOfStocks);
-			
-			/*
-			for (Integer i = 0; i < numberOfSymbols; i++) {
-			
-				userInputs.add(new Scanner(System.in));
-				System.out.println("Enter a Stock Symbol: ");
-				stockSymbol = userInputs.get(i).nextLine();
-				listOfStocks.stockFileList.put(i, stockSymbol +".txt");	
-				Utils.writeToFile(Utils.createFile(stockSymbol), Scraper.getStockPrice(stockSymbol));
-			}*/
-			
-			//Utils.serializeFileList(listOfStocks);
+		} catch (IOException e) {
+			System.out.println(Utils.error);
+			e.printStackTrace();
+		} finally {
+			try {
+				if (fileOutputStream != null) {
+					fileOutputStream.close();
+				}
+			} catch (IOException e) {
+				System.out.print(Utils.error);
+				e.printStackTrace();
+			}
+		}
+		return file;
 	}
 	
-	public void displayMainMenu() {
-		TreeMap<Integer, String> mainMenu = new TreeMap<Integer, String>();
-
-		System.out.println("\nWelcome to the Stock Price Report Generator");
-		System.out.println("Please enter your choice\n");
-		
-		mainMenu.put(1, "View Stock File List");
-		mainMenu.put(2, "Enter Stock symbol");
-		mainMenu.put(3, "Email current stocks data");
-		mainMenu.put(4, "Email foreign stocks data");
-		mainMenu.put(5, "Email watchlist data");
-		mainMenu.put(6, "Email HCHC 401K data");
-		mainMenu.put(7, "Exit");
-		
-		for (Map.Entry<Integer, String> entry : mainMenu.entrySet()) {	
-			Integer key = entry.getKey();
-			String menuItem = entry.getValue();
-			
-			System.out.println(key + "\t" + menuItem);
-		}
-	}
-
-	public void viewStockFileList() {
-		File stockFilePath = new File(Utils.filePath);
-		File[] listOfFiles = stockFilePath.listFiles();
-		TreeMap<Integer, String> stocks = new TreeMap<Integer, String>();
-		int lengthOfFileName;
-
-		for (int i = 0; i < listOfFiles.length; i++) {
-			stocks.put(i + 1, listOfFiles[i].getName());
-			lengthOfFileName = listOfFiles[i].getName().length();
-			System.out.print((i + 1)+ " - " + listOfFiles[i].getName().substring(0, lengthOfFileName - 4).toUpperCase() + "\n");
-		}
-		System.out.println("\n");
-		Utils.selectStockFile(stocks);
-	}
-
 	public static void main(String[] args) {
-			FileOperations stockFileOperations = new FileOperations();
+			StockFileList stockFileOperations = new StockFileList();
 			boolean isDisplayed = true;
 
 			do {
-				stockFileOperations.displayMainMenu();
+				Utils.displayMainMenu();
 				Scanner userChoice = new Scanner(System.in);
 				int choice = userChoice.nextInt();
 
@@ -96,9 +71,6 @@ public class FileOperations implements IMenu, IProcessUserChoice {
 					} else if (choice == 2) {
 						stockFileOperations.setStockList();
 					} else if (choice == 3) {
-						EmailInformation.emailStockReport();
-					}
-					else if (choice == 7) {
 						isDisplayed = false;
 					}
 					//userChoice.close();	
