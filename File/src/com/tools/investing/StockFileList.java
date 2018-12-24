@@ -11,7 +11,7 @@ import java.util.TreeMap;
 import com.tools.investing.Utils;
 import com.tools.webutils.Scraper;
 
-public class StockFileList implements IProcessUserChoice 
+public class StockFileList
 {
 	protected TreeMap<Integer, String> stockFileList = new TreeMap<Integer, String>();
 	public String stockFilePath = "C://ListOfStocks//";
