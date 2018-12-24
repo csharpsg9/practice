@@ -8,7 +8,7 @@ import com.test.email.*;
 
 public class FileOperations{
 	
-	public void writeToFile(File file, Stock myStock) {
+	public void writeToFile(File file, FinanceStock myStock) {
 		
 		DecimalFormat decimalFormat = new DecimalFormat("#.00");
 		String content = Utils.getSimpleDateFormat().format(new Date()) + ", " + myStock.stockSymbol + ", " + decimalFormat.format(myStock.price);

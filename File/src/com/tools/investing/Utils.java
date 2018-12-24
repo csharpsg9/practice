@@ -42,7 +42,7 @@ public class Utils {
 	}
 	
 	public static void startStockAnalysisProject(){
-		StockFileList stockFileOperations = new StockFileList();
+		StockFileOperations stockFileOperations = new StockFileOperations();
 		boolean isDisplayed = true;
 
 		do {

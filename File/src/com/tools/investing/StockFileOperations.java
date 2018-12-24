@@ -11,14 +11,13 @@ import java.util.TreeMap;
 import com.tools.investing.Utils;
 import com.tools.webutils.Scraper;
 
-public class StockFileList
+public class StockFileOperations
 {
 	public TreeMap<Integer, String> stockFileList = new TreeMap<Integer, String>();
 	
+	public StockFileOperations(){}
 	
-	public StockFileList(){}
-	
-	public StockFileList(TreeMap<Integer, String> stockFile){
+	public StockFileOperations(TreeMap<Integer, String> stockFile){
 		stockFileList = stockFile;
 	}
 	
@@ -27,7 +26,7 @@ public class StockFileList
 			FileOperations fileOperations = new FileOperations();
 			Scanner howManyTickerSymbols = new Scanner(System.in);
 			String stockSymbol = "";
-			StockFileList listOfStocks = new StockFileList();
+			StockFileOperations listOfStocks = new StockFileOperations();
 			int numberOfSymbols = 0;
 
 			System.out.println("How many ticker symbols do you want to enter? ");
@@ -42,7 +41,6 @@ public class StockFileList
 				listOfStocks.stockFileList.put(i, stockSymbol +".txt");	
 				fileOperations.writeToFile(fileOperations.createFile(stockSymbol), Scraper.getStockPrice(stockSymbol));
 			}
-			
 			listOfStocks.setStockFileList(listOfStocks);
 	}
 	
@@ -59,7 +57,6 @@ public class StockFileList
 		System.out.print((i + 1)+ " - " + listOfFiles[i].getName().substring(0, lengthOfFileName - 4).toUpperCase() + "\n");
 	}
 	System.out.println("\n");
-	//Utils.selectStockFile(stocks);
 	selectStockFile(stocks);
 }
 	
@@ -79,7 +76,7 @@ public class StockFileList
 		}
 	}
 		
-	public void setStockFileList(StockFileList stockList)
+	public void setStockFileList(StockFileOperations stockList)
 	{
 		for (Map.Entry<Integer, String> entry : stockList.stockFileList.entrySet()) {	
 			Integer key = entry.getKey();
@@ -96,6 +93,5 @@ public class StockFileList
 	         i.printStackTrace();
 	      }
 	}
-	
 	
 }
