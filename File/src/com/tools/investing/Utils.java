@@ -9,9 +9,10 @@ import com.tools.webutils.*;
 
 public class Utils {
 	
-	public static final String error = "*** Error ***";
-	public static final String userReportChoice = "Which report do you want to see?"; 
-	public static String filePath = "C://Users//shuai_000//Desktop//stocks//";		                                    
+	public static String error = "*** Error ***";
+	public static String userReportChoice = "Which report do you want to see?"; 
+	public static String filePath = "C://Users//shuai_000//Desktop//stocks//";	
+	public static String stockFilePath = "C://ListOfStocks//";
 	
 	public static TreeMap<Integer, String> createMainMenuList(){
 		TreeMap<Integer, String> mainMenu = new TreeMap<Integer, String>();
@@ -38,6 +39,27 @@ public class Utils {
 	public static SimpleDateFormat getSimpleDateFormat(){
 		SimpleDateFormat dateFormat = new SimpleDateFormat("E MM/dd/yyyy - hh:mm:ss a zzz");
 		return dateFormat;
+	}
+	
+	public static void startStockAnalysisProject(){
+		StockFileList stockFileOperations = new StockFileList();
+		boolean isDisplayed = true;
+
+		do {
+			Utils.displayMainMenu();
+			Scanner userChoice = new Scanner(System.in);
+			int choice = userChoice.nextInt();
+
+				if (choice == 1) {
+					stockFileOperations.viewStockFileList();
+				} else if (choice == 2) {
+					stockFileOperations.setStockList();
+				} else if (choice == 3) {
+					isDisplayed = false;
+				}
+		} while(isDisplayed);
+
+		System.out.print("\nThank you for using Stock Price Report Generator.\n");
 	}
 
 }

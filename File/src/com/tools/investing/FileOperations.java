@@ -56,27 +56,4 @@ public class FileOperations{
 		}
 		return file;
 	}
-	
-	public static void main(String[] args) {
-			StockFileList stockFileOperations = new StockFileList();
-			boolean isDisplayed = true;
-
-			do {
-				Utils.displayMainMenu();
-				Scanner userChoice = new Scanner(System.in);
-				int choice = userChoice.nextInt();
-
-					if (choice == 1) {
-						stockFileOperations.viewStockFileList();
-					} else if (choice == 2) {
-						stockFileOperations.setStockList();
-					} else if (choice == 3) {
-						isDisplayed = false;
-					}
-					//userChoice.close();	
-			} while(isDisplayed);
-	
-		System.out.print("\nThank you for using Stock Price Report Generator.\n");
-	}
-
 }

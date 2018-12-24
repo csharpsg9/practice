@@ -13,13 +13,12 @@ import com.tools.webutils.Scraper;
 
 public class StockFileList
 {
-	protected TreeMap<Integer, String> stockFileList = new TreeMap<Integer, String>();
-	public String stockFilePath = "C://ListOfStocks//";
+	public TreeMap<Integer, String> stockFileList = new TreeMap<Integer, String>();
 	
-	protected StockFileList(){}
 	
-	protected StockFileList(TreeMap<Integer, String> stockFile)
-	{
+	public StockFileList(){}
+	
+	public StockFileList(TreeMap<Integer, String> stockFile){
 		stockFileList = stockFile;
 	}
 	
@@ -88,7 +87,7 @@ public class StockFileList
 		}
 		
 		try {
-	         FileOutputStream fileOut = new FileOutputStream(stockFilePath + "//list.ser");
+	         FileOutputStream fileOut = new FileOutputStream(Utils.stockFilePath + "//list.ser");
 	         ObjectOutputStream out = new ObjectOutputStream(fileOut);
 	         out.writeObject(stockList.stockFileList);
 	         out.close();
