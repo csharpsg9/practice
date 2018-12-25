@@ -2,9 +2,9 @@ package com.tools.investing;
 
 import java.io.*;
 
-public class StockFileReport {
+public class StockReport {
 	
-	public StockFileReport(){}
+	public StockReport(){}
 	
 	public void viewStockReport(String fileName) {
 		BufferedReader bufferedReader = null;

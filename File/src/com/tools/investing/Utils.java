@@ -42,7 +42,7 @@ public class Utils {
 	}
 	
 	public static void startStockAnalysisProject(){
-		StockFileOperations stockFileOperations = new StockFileOperations();
+		StockOperations stockFileOperations = new StockOperations();
 		boolean isDisplayed = true;
 		Scanner userChoice = new Scanner(System.in);
 		
@@ -51,9 +51,9 @@ public class Utils {
 			int choice = userChoice.nextInt();
 
 				if (choice == 1) {
-					stockFileOperations.viewStockFileList();
+					stockFileOperations.getStockFileList();
 				} else if (choice == 2) {
-					stockFileOperations.setStockList();
+					stockFileOperations.enterStockSymbol();
 				} else if (choice == 3) {
 					isDisplayed = false;
 				}

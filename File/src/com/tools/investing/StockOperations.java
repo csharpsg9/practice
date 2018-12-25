@@ -11,23 +11,23 @@ import java.util.TreeMap;
 import com.tools.investing.Utils;
 import com.tools.webutils.Scraper;
 
-public class StockFileOperations
+public class StockOperations
 {
 	public TreeMap<Integer, String> stockFileList = new TreeMap<Integer, String>();
 	
-	public StockFileOperations(){}
+	public StockOperations(){}
 	
-	public StockFileOperations(TreeMap<Integer, String> stockFile){
+	public StockOperations(TreeMap<Integer, String> stockFile){
 		stockFileList = stockFile;
 	}
 	
-	public void setStockList() {
+	public void enterStockSymbol() {
 		
 			FileOperations fileOperations = new FileOperations();
 			Scanner howManyTickerSymbols = new Scanner(System.in);
 			String stockSymbol = "";
-			StockFileOperations listOfStocks = new StockFileOperations();
-			//int numberOfSymbols = 0;
+			StockOperations listOfStocks = new StockOperations();
+		
 			System.out.println("How many ticker symbols do you want to enter? ");
 			int numberOfSymbols = howManyTickerSymbols.nextInt();
 			
@@ -44,7 +44,7 @@ public class StockFileOperations
 			//howManyTickerSymbols.close();
 	}
 	
-	public void viewStockFileList() {
+	public void getStockFileList() {
 		
 	File stockFilePath = new File(Utils.filePath);
 	File[] listOfFiles = stockFilePath.listFiles();
@@ -61,7 +61,7 @@ public class StockFileOperations
 }
 	
 	public void selectStockFile(TreeMap<Integer, String> stocks) {
-		StockFileReport stockFileReport = new StockFileReport(); 
+		StockReport stockFileReport = new StockReport(); 
 		System.out.println(Utils.userReportChoice + "\n");
 
 		Scanner reportChoice = new Scanner(System.in);
@@ -76,7 +76,7 @@ public class StockFileOperations
 		}
 	}
 		
-	public void setStockFileList(StockFileOperations stockList)
+	public void setStockFileList(StockOperations stockList)
 	{
 		for (Map.Entry<Integer, String> entry : stockList.stockFileList.entrySet()) {	
 			Integer key = entry.getKey();
