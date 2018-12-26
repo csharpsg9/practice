@@ -25,15 +25,21 @@ public class StockOperations
 		stockFileList = stockFile;
 	}
 	
-	public void enterStockSymbol() {
+	public int getNumberOfStockSymbols(){
 		
-		String stockSymbol = "";
-		StockOperations listOfStocks = new StockOperations(stockoperationsScanner, fileOperations);
 		System.out.println("How many ticker symbols do you want to enter? ");
 		int numberOfSymbols = stockoperationsScanner.nextInt();
-		ArrayList<Scanner> userInputs = new ArrayList<Scanner>(numberOfSymbols);
+		return numberOfSymbols;
+	}
+	
+	public void enterStockSymbol() {
+		
+		int numberOfStocks = getNumberOfStockSymbols();
+		String stockSymbol = "";
+		StockOperations listOfStocks = new StockOperations(stockoperationsScanner, fileOperations);
+		ArrayList<Scanner> userInputs = new ArrayList<Scanner>(numberOfStocks);
 			
-		for (Integer i = 0; i < numberOfSymbols; i++) {
+		for (Integer i = 0; i < numberOfStocks; i++) {
 			userInputs.add(new Scanner(System.in));
 			System.out.println("Enter a Stock Symbol: ");
 			stockSymbol = userInputs.get(i).nextLine();
@@ -76,7 +82,6 @@ public class StockOperations
 		
 	public void setStockFileList(StockOperations stockList)
 	{
-		
 		try {
 	         FileOutputStream fileOut = new FileOutputStream(Utils.stockFilePath + "//list.ser");
 	         ObjectOutputStream out = new ObjectOutputStream(fileOut);
