@@ -18,10 +18,10 @@ public class StockAnalysis {
 	
 	public static void main(String[] args) {
 		StockAnalysis stockAnalysis = new StockAnalysis(new Scanner(System.in));
-		stockAnalysis.startStockAnalysisProject();
+		stockAnalysis.getUserInput();
 	}
 	
-	public void startStockAnalysisProject(){
+	public void getUserInput(){
 		
 		boolean isDisplayed = true;
 		do {
