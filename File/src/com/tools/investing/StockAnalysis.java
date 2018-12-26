@@ -19,6 +19,7 @@ public class StockAnalysis {
 	public static void main(String[] args) {
 		StockAnalysis stockAnalysis = new StockAnalysis(new Scanner(System.in));
 		stockAnalysis.getUserInput();
+		System.out.print("\nThank you for using Stock Price Report Generator.\n");
 	}
 	
 	public void getUserInput(){
@@ -37,8 +38,6 @@ public class StockAnalysis {
 				}
 		} while(isDisplayed);
 		sascanner.close();
-
-		System.out.print("\nThank you for using Stock Price Report Generator.\n");
 	}
 	
 	public TreeMap<Integer, String> createMainMenuList(){

@@ -76,10 +76,6 @@ public class StockOperations
 		
 	public void setStockFileList(StockOperations stockList)
 	{
-		for (Map.Entry<Integer, String> entry : stockList.stockFileList.entrySet()) {	
-			Integer key = entry.getKey();
-			String stockFile = entry.getValue();
-		}
 		
 		try {
 	         FileOutputStream fileOut = new FileOutputStream(Utils.stockFilePath + "//list.ser");
