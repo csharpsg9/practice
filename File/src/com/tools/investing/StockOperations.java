@@ -13,59 +13,57 @@ import com.tools.webutils.Scraper;
 
 public class StockOperations
 {
+	Scanner stockoperationsScanner;
+	FileOperations fileOperations;
+	public StockOperations(Scanner scanner, FileOperations fileOperations){
+		this.stockoperationsScanner = scanner;
+		this.fileOperations = fileOperations;
+		
+	}
 	public TreeMap<Integer, String> stockFileList = new TreeMap<Integer, String>();
-	
-	public StockOperations(){}
-	
 	public StockOperations(TreeMap<Integer, String> stockFile){
 		stockFileList = stockFile;
 	}
 	
 	public void enterStockSymbol() {
 		
-			FileOperations fileOperations = new FileOperations();
-			Scanner howManyTickerSymbols = new Scanner(System.in);
-			String stockSymbol = "";
-			StockOperations listOfStocks = new StockOperations();
-		
-			System.out.println("How many ticker symbols do you want to enter? ");
-			int numberOfSymbols = howManyTickerSymbols.nextInt();
+		String stockSymbol = "";
+		StockOperations listOfStocks = new StockOperations(stockoperationsScanner, fileOperations);
+		System.out.println("How many ticker symbols do you want to enter? ");
+		int numberOfSymbols = stockoperationsScanner.nextInt();
+		ArrayList<Scanner> userInputs = new ArrayList<Scanner>(numberOfSymbols);
 			
-			ArrayList<Scanner> userInputs = new ArrayList<Scanner>(numberOfSymbols);
-			
-			for (Integer i = 0; i < numberOfSymbols; i++) {
-				userInputs.add(new Scanner(System.in));
-				System.out.println("Enter a Stock Symbol: ");
-				stockSymbol = userInputs.get(i).nextLine();
-				listOfStocks.stockFileList.put(i, stockSymbol +".txt");	
-				fileOperations.writeToFile(fileOperations.createFile(stockSymbol), Scraper.getStockPrice(stockSymbol));
-			}
-			listOfStocks.setStockFileList(listOfStocks);
-			//howManyTickerSymbols.close();
+		for (Integer i = 0; i < numberOfSymbols; i++) {
+			userInputs.add(new Scanner(System.in));
+			System.out.println("Enter a Stock Symbol: ");
+			stockSymbol = userInputs.get(i).nextLine();
+			listOfStocks.stockFileList.put(i, stockSymbol +".txt");	
+			fileOperations.writeToFile(fileOperations.createFile(stockSymbol), Scraper.getStockPrice(stockSymbol));
+		}	
+		listOfStocks.setStockFileList(listOfStocks);
 	}
 	
 	public void getStockFileList() {
 		
-	File stockFilePath = new File(Utils.filePath);
-	File[] listOfFiles = stockFilePath.listFiles();
-	TreeMap<Integer, String> stocks = new TreeMap<Integer, String>();
-	int lengthOfFileName;
+		File stockFilePath = new File(Utils.filePath);
+		File[] listOfFiles = stockFilePath.listFiles();
+		TreeMap<Integer, String> stocks = new TreeMap<Integer, String>();
+		int lengthOfFileName;
 
-	for (int i = 0; i < listOfFiles.length; i++) {
-		stocks.put(i + 1, listOfFiles[i].getName());
-		lengthOfFileName = listOfFiles[i].getName().length();
-		System.out.print((i + 1)+ " - " + listOfFiles[i].getName().substring(0, lengthOfFileName - 4).toUpperCase() + "\n");
-	}
-	System.out.println("\n");
-	selectStockFile(stocks);
+		for (int i = 0; i < listOfFiles.length; i++) {
+			stocks.put(i + 1, listOfFiles[i].getName());
+			lengthOfFileName = listOfFiles[i].getName().length();
+			System.out.print((i + 1)+ " - " + listOfFiles[i].getName().substring(0, lengthOfFileName - 4).toUpperCase() + "\n");
+		}
+		System.out.println("\n");
+		selectStockFile(stocks);
 }
 	
 	public void selectStockFile(TreeMap<Integer, String> stocks) {
 		StockReport stockFileReport = new StockReport(); 
 		System.out.println(Utils.userReportChoice + "\n");
 
-		Scanner reportChoice = new Scanner(System.in);
-		Integer decision = reportChoice.nextInt();
+		Integer decision = stockoperationsScanner.nextInt();
 
 		for (Map.Entry<Integer, String> entry : stocks.entrySet()) {
 			Integer key = entry.getKey();
