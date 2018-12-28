@@ -28,9 +28,9 @@ public class FileOperations{
 		}
 	}
 	
-	public File createFile(String nameOfFile) {
+	public File createFile(String nameOfFile, String fileExtension) {
 		
-		File file = new File(filePath + nameOfFile + ".txt");
+		File file = new File(filePath + nameOfFile + "." + fileExtension);
 		FileOutputStream fileOutputStream = null;
 		String fileTitle = "Stock Price History Report\n";
 

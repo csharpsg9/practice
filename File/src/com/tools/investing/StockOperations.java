@@ -48,7 +48,7 @@ public class StockOperations
 			System.out.println("Enter a Stock Symbol: ");
 			stockSymbol = userInputs.get(i).nextLine();
 			listOfStocks.stockFileList.put(i, stockSymbol +".txt");	
-			fileOperations.writeToFile(fileOperations.createFile(stockSymbol), Scraper.getStockPrice(stockSymbol));
+			fileOperations.writeToFile(fileOperations.createFile(stockSymbol,"txt"), Scraper.getStockPrice(stockSymbol));
 		}	
 		listOfStocks.setStockFileList(listOfStocks);
 	}

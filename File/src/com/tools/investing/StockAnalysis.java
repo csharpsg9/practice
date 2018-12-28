@@ -28,6 +28,7 @@ public class StockAnalysis {
 		stockAnalysis.getUserInput();
 			
 		System.out.print("\nThank you for using Stock Price Report Generator.\n");
+		
 	}
 	
 	public void getUserInput(){
