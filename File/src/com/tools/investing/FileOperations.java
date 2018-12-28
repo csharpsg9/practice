@@ -41,9 +41,9 @@ public class FileOperations{
 				fileOutputStream.write(contentInBytes);
 				fileOutputStream.flush();
 				fileOutputStream.close();
-				System.out.println(nameOfFile + "." + fileExtension + " -> File created.");
+				System.out.println("File " + nameOfFile + "." + fileExtension + " created.");
 			} else {
-				System.out.println(nameOfFile + "." + fileExtension + " -> File updated.");
+				System.out.println("File " + nameOfFile + "." + fileExtension + " updated.");
 			}
 		} catch (IOException e) {
 			System.out.println(Utils.error);

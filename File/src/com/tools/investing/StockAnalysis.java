@@ -45,7 +45,7 @@ public class StockAnalysis {
 				} else if (choice == 2) {
 					stockOperations.enterStockSymbol();
 				} else if (choice == 3) {
-					stockOperations.getUserSelectedStockFileList();
+					stockOperations.getStockPriceFromPreviousUserStockSymbolInputs();
 				} else if (choice == 4) {
 					isDisplayed = false;
 				}

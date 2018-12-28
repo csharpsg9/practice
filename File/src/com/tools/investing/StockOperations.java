@@ -100,7 +100,7 @@ public class StockOperations
 	      }
 	}
 	
-	public void getUserSelectedStockFileList()
+	public void getStockPriceFromPreviousUserStockSymbolInputs()
 	{
 		TreeMap<Integer, String> userSelectedListOfStocks = new TreeMap<Integer, String>();
 		
@@ -125,8 +125,6 @@ public class StockOperations
 			stock = entry.getValue().substring(0, lengthOfFileName-4);
 			fileOperations.writeToFile(fileOperations.createFile(stock,"txt"), Scraper.getStockPrice(stock));
 		}
-		
-		//return userSelectedListOfStocks;
 	}
 	
 }

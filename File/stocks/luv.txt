@@ -2,3 +2,4 @@ Stock Price History Report
 Sun 06/18/2017 - 10:48:53 AM EDT, luv, 60.29
 Thu 09/27/2018 - 10:24:33 PM EDT, luv, 62.71
 Sun 12/23/2018 - 09:49:46 PM EST, luv, 45.95
+Fri 12/28/2018 - 06:14:54 PM EST, luv, 46.76
