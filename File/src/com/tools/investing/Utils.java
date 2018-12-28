@@ -13,7 +13,8 @@ public class Utils {
 	
 	public static String error = "*** Error ***";
 	public static String userSelectedStockReport = "Which report do you want to see?"; 
-	//public static String stockFilePath = "C://ListOfStocks//";
+	public static String welcomeMessage = "\nWelcome to the Stock Price Report Generator";
+	public static String thankyouMessage = "\nThank you for using Stock Price Report Generator.\n";
 	
 	public static SimpleDateFormat getSimpleDateFormat(){
 		SimpleDateFormat dateFormat = new SimpleDateFormat("E MM/dd/yyyy - hh:mm:ss a zzz");

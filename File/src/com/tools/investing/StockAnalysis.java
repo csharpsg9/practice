@@ -24,11 +24,11 @@ public class StockAnalysis {
 	public static void main(String[] args) {
 		StockAnalysis stockAnalysis = new StockAnalysis(new Scanner(System.in));
 	
-		System.out.println("\nWelcome to the Stock Price Report Generator");
+		System.out.println(Utils.welcomeMessage);
 		System.out.println("Please enter your choice\n");
 		stockAnalysis.getUserInput();
 			
-		System.out.print("\nThank you for using Stock Price Report Generator.\n");
+		System.out.print(Utils.thankyouMessage);
 		
 	}
 	
