@@ -1,0 +1,8 @@
+Stock Price History Report
+Fri 08/24/2018 - 10:54:18 PM EDT, tm, 122.84
+Mon 08/27/2018 - 09:04:49 PM EDT, tm, 126.47
+Fri 09/28/2018 - 07:43:43 PM EDT, tm, 124.35
+Sun 12/23/2018 - 10:58:25 AM EST, tm, 113.96
+Sun 12/23/2018 - 08:53:00 PM EST, tm, 113.96
+Tue 12/25/2018 - 10:03:15 PM EST, tm, 111.81
+Wed 12/26/2018 - 02:48:52 PM EST, tm, 112.93

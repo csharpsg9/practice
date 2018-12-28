@@ -1,0 +1,7 @@
+Stock Price History Report
+Sun 06/11/2017 - 02:13:18 PM EDT, pzza, 79.41
+Wed 06/14/2017 - 08:58:30 PM EDT, pzza, 79.73
+Thu 06/15/2017 - 05:29:37 PM EDT, pzza, 78.06
+Sun 06/18/2017 - 10:48:51 AM EDT, pzza, 78.66
+Sun 01/21/2018 - 11:06:57 PM EST, pzza, 62.75
+Sun 12/23/2018 - 09:29:38 PM EST, pzza, 40.82

@@ -1,0 +1,7 @@
+Stock Price History Report
+Wed 06/14/2017 - 11:35:38 PM EDT, fb, 150.25
+Thu 06/15/2017 - 05:28:58 PM EDT, fb, 149.80
+Thu 09/27/2018 - 10:20:15 PM EDT, fb, 168.84
+Sun 12/23/2018 - 10:58:51 AM EST, fb, 124.95
+Mon 12/24/2018 - 07:35:20 PM EST, fb, 123.92
+Thu 12/27/2018 - 09:46:23 PM EST, fb, 134.52

@@ -1,0 +1,7 @@
+Stock Price History Report
+Sat 06/03/2017 - 12:37:21 PM CDT, vti, 125.41
+Tue 06/06/2017 - 06:01:04 PM CDT, vti, 124.93
+Sat 06/10/2017 - 12:52:50 AM EDT, vti, 125.19
+Sat 06/17/2017 - 11:08:49 PM EDT, vti, 125.25
+Wed 06/28/2017 - 12:09:50 AM EDT, vti, 124.11
+Mon 12/24/2018 - 07:29:32 PM EST, vti, 119.70

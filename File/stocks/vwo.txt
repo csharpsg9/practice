@@ -1,0 +1,6 @@
+Stock Price History Report
+Sat 06/03/2017 - 12:37:30 PM CDT, vwo, 41.17
+Wed 06/07/2017 - 06:28:01 PM EDT, vwo, 41.17
+Thu 06/15/2017 - 11:43:25 PM EDT, vwo, 40.62
+Sat 06/17/2017 - 11:08:44 PM EDT, vwo, 40.75
+Mon 12/24/2018 - 07:17:31 AM EST, vwo, 37.87

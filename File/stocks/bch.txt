@@ -1,0 +1,8 @@
+Stock Price History Report
+Fri 09/22/2017 - 07:09:11 AM EDT, bch, 92.43
+Sat 09/30/2017 - 12:31:32 PM EDT, bch, 91.17
+Thu 12/14/2017 - 01:59:13 AM EST, bch, 84.55
+Wed 12/20/2017 - 07:34:20 PM EST, bch, 94.59
+Thu 09/27/2018 - 10:12:55 PM EDT, bch, 90.22
+Sat 12/22/2018 - 07:26:13 PM EST, bch, 28.20
+Sun 12/23/2018 - 09:39:58 PM EST, bch, 28.20

@@ -1,0 +1,11 @@
+Stock Price History Report
+Sat 06/03/2017 - 12:36:41 PM CDT, fsnuy, 21.73
+Tue 06/06/2017 - 09:23:36 PM EDT, fsnuy, 21.53
+Fri 06/09/2017 - 05:56:12 PM EDT, fsnuy, 21.68
+Wed 06/14/2017 - 11:23:55 PM EDT, fsnuy, 22.14
+Thu 06/15/2017 - 05:29:46 PM EDT, fsnuy, 21.90
+Fri 06/16/2017 - 08:38:22 PM EDT, fsnuy, 22.28
+Tue 09/11/2018 - 10:45:33 PM EDT, fsnuy, 18.45
+Thu 09/27/2018 - 10:14:41 PM EDT, fsnuy, 18.43
+Sat 12/22/2018 - 07:26:46 PM EST, fsnuy, 12.07
+Mon 12/24/2018 - 07:34:40 PM EST, fsnuy, 12.04

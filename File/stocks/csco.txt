@@ -1,0 +1,10 @@
+Stock Price History Report
+Sat 06/03/2017 - 12:36:27 PM CDT, csco, 31.98
+Tue 06/06/2017 - 05:54:05 PM CDT, csco, 31.56
+Wed 06/07/2017 - 08:58:23 PM EDT, csco, 31.61
+Sun 06/11/2017 - 02:11:40 PM EDT, csco, 31.37
+Mon 06/12/2017 - 12:46:36 AM EDT, csco, 31.37
+Mon 06/12/2017 - 12:48:55 AM EDT, csco, 31.37
+Tue 06/13/2017 - 07:55:07 PM EDT, csco, 31.70
+Wed 06/14/2017 - 07:07:58 PM EDT, csco, 31.60
+Wed 12/26/2018 - 03:03:04 PM EST, csco, 41.62

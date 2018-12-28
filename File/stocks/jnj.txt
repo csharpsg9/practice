@@ -1,0 +1,4 @@
+Stock Price History Report
+Wed 09/05/2018 - 07:18:39 PM EDT, jnj, 135.86
+Tue 09/11/2018 - 10:41:35 PM EDT, jnj, 138.51
+Sun 12/23/2018 - 08:52:58 PM EST, jnj, 128.09

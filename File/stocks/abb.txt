@@ -1,0 +1,5 @@
+Stock Price History Report
+Wed 09/05/2018 - 07:08:27 PM EDT, abb, 23.31
+Thu 09/27/2018 - 10:22:14 PM EDT, abb, 23.71
+Tue 12/04/2018 - 08:34:42 PM EST, abb, 19.66
+Sun 12/23/2018 - 09:59:43 PM EST, abb, 18.44

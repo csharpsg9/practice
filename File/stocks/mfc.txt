@@ -1,0 +1,9 @@
+Stock Price History Report
+Sat 06/17/2017 - 11:09:29 PM EDT, mfc, 18.25
+Thu 01/18/2018 - 10:36:07 PM EST, mfc, 21.92
+Sun 02/11/2018 - 11:29:26 PM EST, mfc, 19.92
+Thu 09/27/2018 - 10:17:47 PM EDT, mfc, 18.01
+Sun 12/23/2018 - 10:59:02 AM EST, mfc, 13.67
+Mon 12/24/2018 - 07:47:19 AM EST, mfc, 13.67
+Mon 12/24/2018 - 02:06:15 PM EST, mfc, 13.59
+Wed 12/26/2018 - 02:49:00 PM EST, mfc, 13.76

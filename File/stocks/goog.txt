@@ -1,0 +1,4 @@
+Stock Price History Report
+Wed 06/28/2017 - 12:10:15 AM EDT, goog, 927.33
+Wed 09/05/2018 - 07:47:26 PM EDT, goog, 1186.48
+Thu 09/27/2018 - 10:20:18 PM EDT, goog, 1194.64

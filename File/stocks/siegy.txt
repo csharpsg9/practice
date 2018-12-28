@@ -1,0 +1,5 @@
+Stock Price History Report
+Fri 09/22/2017 - 07:09:50 AM EDT, siegy, 70.20
+Tue 12/04/2018 - 08:30:54 PM EST, siegy, 57.18
+Wed 12/19/2018 - 07:08:16 PM EST, siegy, 56.02
+Sun 12/23/2018 - 10:58:29 AM EST, siegy, 55.08

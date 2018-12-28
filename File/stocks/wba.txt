@@ -1,0 +1,11 @@
+Stock Price History Report
+Sun 12/27/2015 - 01:02:12 PM CST, wba, 86.46
+Tue 01/12/2016 - 09:27:30 PM CST, wba, 81.82
+Sat 01/16/2016 - 03:27:29 PM CST, wba, 79.93
+Thu 11/03/2016 - 10:26:04 PM CDT, wba, 80.78
+Wed 11/16/2016 - 07:25:34 PM CST, wba, 83.19
+Sat 06/03/2017 - 12:24:18 PM CDT, wba, 83.10
+Thu 06/08/2017 - 12:27:27 AM EDT, wba, 81.46
+Wed 06/14/2017 - 09:06:18 PM EDT, wba, 82.88
+Sat 06/17/2017 - 12:08:23 AM EDT, wba, 78.44
+Tue 12/25/2018 - 08:40:12 AM EST, wba, 65.26

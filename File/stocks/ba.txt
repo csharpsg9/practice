@@ -1,0 +1,7 @@
+Stock Price History Report
+Fri 06/02/2017 - 06:58:07 PM CDT, ba, 190.23
+Tue 06/06/2017 - 05:53:58 PM CDT, ba, 186.75
+Wed 06/14/2017 - 11:24:02 PM EDT, ba, 192.38
+Thu 06/15/2017 - 05:29:18 PM EDT, ba, 195.45
+Fri 06/16/2017 - 08:27:43 PM EDT, ba, 196.44
+Mon 12/24/2018 - 07:34:34 PM EST, ba, 294.16

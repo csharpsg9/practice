@@ -1,0 +1,3 @@
+Stock Price History Report
+Sat 06/17/2017 - 11:09:16 PM EDT, oxy, 61.83
+Tue 12/25/2018 - 10:09:01 PM EST, oxy, 57.11

@@ -1,0 +1,13 @@
+Stock Price History Report
+Sat 06/03/2017 - 12:36:24 PM CDT, cni, 78.45
+Wed 06/07/2017 - 06:17:00 PM EDT, cni, 78.11
+Fri 06/09/2017 - 05:59:45 PM EDT, cni, 79.21
+Thu 06/15/2017 - 05:29:43 PM EDT, cni, 79.68
+Fri 06/16/2017 - 08:38:18 PM EDT, cni, 81.77
+Sat 06/17/2017 - 11:10:06 PM EDT, cni, 81.77
+Wed 08/23/2017 - 08:04:26 AM EDT, cni, 80.00
+Wed 12/20/2017 - 07:34:40 PM EST, cni, 81.40
+Sun 01/21/2018 - 11:07:08 PM EST, cni, 80.79
+Sun 02/11/2018 - 11:29:19 PM EST, cni, 75.11
+Thu 09/27/2018 - 10:22:11 PM EDT, cni, 89.60
+Sun 12/23/2018 - 10:58:48 AM EST, cni, 72.14

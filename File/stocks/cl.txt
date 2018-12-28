@@ -1,0 +1,5 @@
+Stock Price History Report
+Sat 06/17/2017 - 11:09:45 PM EDT, cl, 76.31
+Sun 12/23/2018 - 09:28:42 PM EST, cl, 59.91
+Tue 12/25/2018 - 10:21:05 PM EST, cl, 58.04
+Wed 12/26/2018 - 04:04:15 PM EST, cl, 59.14

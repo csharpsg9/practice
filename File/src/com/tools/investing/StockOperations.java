@@ -15,9 +15,13 @@ public class StockOperations
 {
 	Scanner stockoperationsScanner;
 	FileOperations fileOperations;
-	public StockOperations(Scanner scanner, FileOperations fileOperations){
+	String sofilePath;
+	
+	public StockOperations(Scanner scanner, FileOperations fileOperations, String filePath){
 		this.stockoperationsScanner = scanner;
 		this.fileOperations = fileOperations;
+		this.sofilePath = filePath;
+		this.fileOperations = new FileOperations(sofilePath);
 		
 	}
 	public TreeMap<Integer, String> stockFileList = new TreeMap<Integer, String>();
@@ -36,7 +40,7 @@ public class StockOperations
 		
 		int numberOfStocks = getNumberOfStockSymbols();
 		String stockSymbol = "";
-		StockOperations listOfStocks = new StockOperations(stockoperationsScanner, fileOperations);
+		StockOperations listOfStocks = new StockOperations(stockoperationsScanner, fileOperations, sofilePath);
 		ArrayList<Scanner> userInputs = new ArrayList<Scanner>(numberOfStocks);
 			
 		for (Integer i = 0; i < numberOfStocks; i++) {
@@ -51,7 +55,7 @@ public class StockOperations
 	
 	public void getStockFileList() {
 		
-		File stockFilePath = new File(Utils.filePath);
+		File stockFilePath = new File(sofilePath);
 		File[] listOfFiles = stockFilePath.listFiles();
 		TreeMap<Integer, String> stocks = new TreeMap<Integer, String>();
 		int lengthOfFileName;
@@ -66,8 +70,8 @@ public class StockOperations
 }
 	
 	public void selectStockFile(TreeMap<Integer, String> stocks) {
-		StockReport stockFileReport = new StockReport(); 
-		System.out.println(Utils.userReportChoice + "\n");
+		StockReport stockFileReport = new StockReport(sofilePath); 
+		System.out.println(Utils.userSelectedStockReport + "\n");
 
 		Integer decision = stockoperationsScanner.nextInt();
 

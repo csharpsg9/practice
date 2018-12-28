@@ -9,16 +9,24 @@ public class StockAnalysis {
 	Scanner sascanner;
 	StockOperations stockOperations;
 	FileOperations fileOperations;
+	String thefilePath;
+	TreeMap<Integer, String> mainMenu = new TreeMap<Integer, String>();
 	
 	StockAnalysis(Scanner scanner){
+		thefilePath = System.getProperty("user.dir") + "\\stocks\\";
 		this.sascanner = scanner;
-		fileOperations = new FileOperations();
-		stockOperations = new StockOperations(sascanner,fileOperations);
+		mainMenu = createMainMenuList();
+		fileOperations = new FileOperations(thefilePath);
+		stockOperations = new StockOperations(sascanner,fileOperations,thefilePath);
 	}
 	
 	public static void main(String[] args) {
 		StockAnalysis stockAnalysis = new StockAnalysis(new Scanner(System.in));
+	
+		System.out.println("\nWelcome to the Stock Price Report Generator");
+		System.out.println("Please enter your choice\n");
 		stockAnalysis.getUserInput();
+			
 		System.out.print("\nThank you for using Stock Price Report Generator.\n");
 	}
 	
@@ -49,15 +57,7 @@ public class StockAnalysis {
 	}
 	
 	public void displayMainMenu() {
-		TreeMap<Integer, String> mainMenu = createMainMenuList();
 
-		System.out.println("\nWelcome to the Stock Price Report Generator");
-		System.out.println("Please enter your choice\n");
-//		Path p5 = Paths.get(System.getProperty("user.home"),"logs", "foo.log");
-//		System.out.println(p5.toAbsolutePath());
-//		System.out.println(p5.getFileSystem());
-//		System.out.println(p5.getFileName());
-		
 		for (Map.Entry<Integer, String> entry : mainMenu.entrySet()) {	
 			Integer key = entry.getKey();
 			String menuItem = entry.getValue();

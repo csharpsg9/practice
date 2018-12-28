@@ -1,0 +1,7 @@
+Stock Price History Report
+Sat 06/17/2017 - 11:06:53 PM EDT, wbk, 23.36
+Tue 09/11/2018 - 10:41:21 PM EDT, wbk, 19.66
+Thu 09/27/2018 - 10:12:58 PM EDT, wbk, 19.90
+Mon 12/24/2018 - 01:52:33 PM EST, wbk, 16.48
+Tue 12/25/2018 - 10:27:34 PM EST, wbk, 16.48
+Thu 12/27/2018 - 09:42:11 PM EST, wbk, 17.03

@@ -8,6 +8,10 @@ import com.test.email.*;
 
 public class FileOperations{
 	
+	String filePath;
+	public FileOperations(String filePath){
+		this.filePath = filePath;
+	}
 	public void writeToFile(File file, FinanceStock myStock) {
 		
 		DecimalFormat decimalFormat = new DecimalFormat("#.00");
@@ -26,7 +30,7 @@ public class FileOperations{
 	
 	public File createFile(String nameOfFile) {
 		
-		File file = new File(Utils.filePath + nameOfFile + ".txt");
+		File file = new File(filePath + nameOfFile + ".txt");
 		FileOutputStream fileOutputStream = null;
 		String fileTitle = "Stock Price History Report\n";
 

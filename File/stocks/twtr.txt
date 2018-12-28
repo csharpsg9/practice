@@ -1,0 +1,9 @@
+Stock Price History Report
+Wed 11/02/2016 - 09:21:36 AM CDT, twtr, 17.88
+Wed 11/02/2016 - 03:56:06 PM CDT, twtr, 17.61
+Thu 11/03/2016 - 10:18:49 PM CDT, twtr, 17.58
+Sat 06/03/2017 - 12:29:51 PM CDT, twtr, 18.31
+Wed 06/07/2017 - 09:05:36 PM EDT, twtr, 17.44
+Wed 06/14/2017 - 11:35:36 PM EDT, twtr, 16.76
+Thu 06/15/2017 - 05:29:35 PM EDT, twtr, 16.83
+Sun 12/23/2018 - 09:33:15 PM EST, twtr, 27.31

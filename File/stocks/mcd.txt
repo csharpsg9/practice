@@ -1,0 +1,3 @@
+Stock Price History Report
+Sat 06/17/2017 - 11:09:32 PM EDT, mcd, 151.99
+Tue 12/25/2018 - 08:39:02 AM EST, mcd, 170.28

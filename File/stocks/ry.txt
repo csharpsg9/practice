@@ -1,0 +1,7 @@
+Stock Price History Report
+Wed 06/07/2017 - 06:16:42 PM EDT, ry, 68.95
+Wed 06/14/2017 - 09:06:13 PM EDT, ry, 70.57
+Sat 06/17/2017 - 11:09:10 PM EDT, ry, 71.01
+Mon 12/24/2018 - 01:58:17 PM EST, ry, 66.36
+Mon 12/24/2018 - 01:59:08 PM EST, ry, 66.36
+Wed 12/26/2018 - 02:48:57 PM EST, ry, 67.30

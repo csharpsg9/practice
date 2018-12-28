@@ -1,0 +1,4 @@
+Stock Price History Report
+Sat 06/17/2017 - 12:38:10 PM EDT, bsv, 79.96
+Sun 12/23/2018 - 09:28:39 PM EST, bsv, 78.48
+Tue 12/25/2018 - 08:33:24 AM EST, bsv, 78.38

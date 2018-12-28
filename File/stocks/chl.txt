@@ -1,0 +1,8 @@
+Stock Price History Report
+Tue 12/04/2018 - 08:30:50 PM EST, chl, 47.90
+Sun 12/23/2018 - 08:57:26 PM EST, chl, 47.46
+Mon 12/24/2018 - 01:52:35 PM EST, chl, 46.43
+Tue 12/25/2018 - 10:21:03 PM EST, chl, 46.43
+Wed 12/26/2018 - 02:48:46 PM EST, chl, 46.98
+Wed 12/26/2018 - 04:04:18 PM EST, chl, 47.31
+Thu 12/27/2018 - 09:46:29 PM EST, chl, 47.60

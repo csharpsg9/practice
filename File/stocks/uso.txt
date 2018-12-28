@@ -1,0 +1,17 @@
+Stock Price History Report
+Sat 01/16/2016 - 03:21:29 PM CST, uso, 8.79
+Tue 07/26/2016 - 01:37:03 PM CDT, uso, 10.08
+Fri 07/29/2016 - 02:00:40 AM CDT, uso, 9.67
+Tue 11/01/2016 - 04:54:39 AM CDT, uso, 10.53
+Tue 11/01/2016 - 08:52:52 AM CDT, uso, 10.65
+Tue 11/01/2016 - 09:01:42 AM CDT, uso, 10.64
+Tue 11/01/2016 - 04:44:21 PM CDT, uso, 10.57
+Wed 11/02/2016 - 08:49:23 AM CDT, uso, 10.36
+Wed 12/28/2016 - 06:02:37 PM CST, uso, 11.75
+Sat 06/03/2017 - 12:24:33 PM CDT, uso, 9.86
+Wed 06/14/2017 - 09:05:07 PM EDT, uso, 9.23
+Sat 06/17/2017 - 12:08:27 AM EDT, uso, 9.24
+Wed 06/28/2017 - 12:10:02 AM EDT, uso, 9.10
+Sun 12/23/2018 - 09:33:11 PM EST, uso, 9.57
+Tue 12/25/2018 - 10:21:08 PM EST, uso, 9.29
+Wed 12/26/2018 - 02:49:09 PM EST, uso, 9.74

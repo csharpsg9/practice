@@ -1,0 +1,6 @@
+Stock Price History Report
+Sat 06/03/2017 - 12:36:32 PM CDT, dte, 110.93
+Sat 06/10/2017 - 12:46:34 AM EDT, dte, 108.98
+Wed 06/14/2017 - 07:23:14 PM EDT, dte, 110.49
+Thu 09/27/2018 - 10:13:02 PM EDT, dte, 107.41
+Sat 12/22/2018 - 07:26:35 PM EST, dte, 114.05

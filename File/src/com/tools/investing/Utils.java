@@ -12,8 +12,7 @@ import com.tools.webutils.*;
 public class Utils {
 	
 	public static String error = "*** Error ***";
-	public static String userReportChoice = "Which report do you want to see?"; 
-	public static String filePath = "C://Users//shuai_000//Desktop//stocks//";	
+	public static String userSelectedStockReport = "Which report do you want to see?"; 
 	public static String stockFilePath = "C://ListOfStocks//";
 	
 	public static SimpleDateFormat getSimpleDateFormat(){

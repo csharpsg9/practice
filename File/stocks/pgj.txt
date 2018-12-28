@@ -1,0 +1,8 @@
+Stock Price History Report
+Sat 06/03/2017 - 12:37:05 PM CDT, pgj, 38.86
+Mon 06/05/2017 - 03:32:33 PM CDT, pgj, 39.05
+Wed 06/07/2017 - 08:58:27 PM EDT, pgj, 40.37
+Sat 06/10/2017 - 12:45:33 AM EDT, pgj, 38.46
+Wed 06/14/2017 - 07:29:31 PM EDT, pgj, 37.58
+Thu 06/15/2017 - 05:29:24 PM EDT, pgj, 37.37
+Tue 06/20/2017 - 12:07:34 AM EDT, pgj, 38.37

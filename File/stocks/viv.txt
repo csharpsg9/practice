@@ -1,0 +1,4 @@
+Stock Price History Report
+Sat 06/17/2017 - 11:08:59 PM EDT, viv, 13.97
+Tue 06/20/2017 - 11:46:29 PM EDT, viv, 13.66
+Mon 12/24/2018 - 07:29:29 PM EST, viv, 11.65

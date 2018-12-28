@@ -1,0 +1,9 @@
+Stock Price History Report
+Tue 08/14/2018 - 09:28:03 PM EDT, bp, 42.61
+Wed 08/15/2018 - 08:46:50 PM EDT, bp, 41.53
+Mon 08/27/2018 - 09:04:59 PM EDT, bp, 43.87
+Fri 08/31/2018 - 09:23:36 PM EDT, bp, 42.88
+Wed 09/05/2018 - 06:55:35 PM EDT, bp, 42.78
+Fri 09/28/2018 - 07:43:40 PM EDT, bp, 46.10
+Wed 12/19/2018 - 07:08:11 PM EST, bp, 37.65
+Sun 12/23/2018 - 09:21:22 PM EST, bp, 37.67

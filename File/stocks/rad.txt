@@ -1,0 +1,6 @@
+Stock Price History Report
+Mon 07/03/2017 - 09:53:40 PM EDT, rad, 2.69
+Fri 07/21/2017 - 12:33:43 AM EDT, rad, 2.54
+Sun 02/11/2018 - 11:28:59 PM EST, rad, 2.01
+Sun 12/23/2018 - 08:34:10 PM EST, rad, .71
+Tue 12/25/2018 - 08:35:15 AM EST, rad, .68

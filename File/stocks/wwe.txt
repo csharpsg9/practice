@@ -1,0 +1,6 @@
+Stock Price History Report
+Thu 09/27/2018 - 10:22:59 PM EDT, wwe, 96.08
+Sun 12/23/2018 - 10:58:39 AM EST, wwe, 69.73
+Mon 12/24/2018 - 02:10:40 PM EST, wwe, 66.77
+Tue 12/25/2018 - 10:16:45 PM EST, wwe, 66.77
+Thu 12/27/2018 - 09:34:03 PM EST, wwe, 73.05

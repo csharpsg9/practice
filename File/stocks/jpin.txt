@@ -1,0 +1,5 @@
+Stock Price History Report
+Wed 06/14/2017 - 09:05:20 PM EDT, jpin, 56.73
+Wed 06/14/2017 - 11:34:40 PM EDT, jpin, 56.73
+Thu 06/15/2017 - 05:29:30 PM EDT, jpin, 56.15
+Tue 12/25/2018 - 08:38:56 AM EST, jpin, 49.33
