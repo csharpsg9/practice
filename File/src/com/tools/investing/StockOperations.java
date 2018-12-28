@@ -1,6 +1,8 @@
 package com.tools.investing;
 
 import java.io.FileOutputStream;
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.io.File;
@@ -72,7 +74,7 @@ public class StockOperations
 	
 	public void selectStockFile(TreeMap<Integer, String> stocks) {
 		StockReport stockFileReport = new StockReport(sofilePath); 
-		System.out.println(Utils.userSelectedStockReport + "\n");
+		Utils.getuserSelectedStockReport();
 
 		Integer decision = stockoperationsScanner.nextInt();
 
@@ -96,6 +98,35 @@ public class StockOperations
 	      }catch(IOException i) {
 	         i.printStackTrace();
 	      }
+	}
+	
+	public void getUserSelectedStockFileList()
+	{
+		TreeMap<Integer, String> userSelectedListOfStocks = new TreeMap<Integer, String>();
+		
+		try {
+	         FileInputStream fileIn = new FileInputStream(soSerializedFilePath + "\\list.ser");
+	         ObjectInputStream in = new ObjectInputStream(fileIn);
+	         userSelectedListOfStocks = (TreeMap<Integer, String>)in.readObject();
+	         //System.out.println("deserialized data");
+	         in.close();
+	         fileIn.close();
+	      }catch(IOException i) {
+	         i.printStackTrace();
+	      }catch(ClassNotFoundException c) {
+	         c.printStackTrace();
+	      }
+		
+		int lengthOfFileName;
+		String stock;
+		for (Map.Entry<Integer, String> entry : userSelectedListOfStocks.entrySet()) {
+			
+			lengthOfFileName = entry.getValue().length();
+			stock = entry.getValue().substring(0, lengthOfFileName-4);
+			fileOperations.writeToFile(fileOperations.createFile(stock,"txt"), Scraper.getStockPrice(stock));
+		}
+		
+		//return userSelectedListOfStocks;
 	}
 	
 }

@@ -25,10 +25,11 @@ public class StockAnalysis {
 	public static void main(String[] args) {
 		StockAnalysis stockAnalysis = new StockAnalysis(new Scanner(System.in));
 	
-		System.out.println(Utils.welcomeMessage);
-		System.out.println(Utils.enterYourChoice);
+		Utils.getWelcomeMessage();
+		Utils.getUserSelectionFromMainMenu();
 		stockAnalysis.getUserInput();
-		System.out.print(Utils.thankyouMessage);
+		//stockAnalysis.stockOperations.getUserSelectedStockFileList();
+		Utils.getThankYouMessage();
 		
 	}
 	
@@ -44,6 +45,8 @@ public class StockAnalysis {
 				} else if (choice == 2) {
 					stockOperations.enterStockSymbol();
 				} else if (choice == 3) {
+					stockOperations.getUserSelectedStockFileList();
+				} else if (choice == 4) {
 					isDisplayed = false;
 				}
 		} while(isDisplayed);
@@ -54,7 +57,8 @@ public class StockAnalysis {
 		TreeMap<Integer, String> mainMenu = new TreeMap<Integer, String>();
 		mainMenu.put(1, "View Stock File List");
 		mainMenu.put(2, "Enter Stock symbol");
-		mainMenu.put(3, "Exit");
+		mainMenu.put(3, "Get Quotes From Previous Inputs");
+		mainMenu.put(4, "Exit");
 		return mainMenu;
 	}
 	
