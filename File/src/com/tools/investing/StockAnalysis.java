@@ -6,6 +6,7 @@ import java.util.TreeMap;
 
 public class StockAnalysis {
 
+	String directoryPath = System.getProperty("user.dir"); 
 	Scanner sascanner;
 	StockOperations stockOperations;
 	FileOperations fileOperations;
@@ -13,8 +14,8 @@ public class StockAnalysis {
 	TreeMap<Integer, String> mainMenu = new TreeMap<Integer, String>();
 	
 	StockAnalysis(Scanner scanner){
-		thefilePath = System.getProperty("user.dir") + "\\stocks\\";
-		pathToSerializedFile = System.getProperty("user.dir") + "\\ListOfStocks\\";
+		thefilePath = directoryPath + "\\stocks\\";
+		pathToSerializedFile = directoryPath + "\\ListOfStocks\\";
 		this.sascanner = scanner;
 		mainMenu = createMainMenuList();
 		fileOperations = new FileOperations(thefilePath);
@@ -25,9 +26,8 @@ public class StockAnalysis {
 		StockAnalysis stockAnalysis = new StockAnalysis(new Scanner(System.in));
 	
 		System.out.println(Utils.welcomeMessage);
-		System.out.println("Please enter your choice\n");
+		System.out.println(Utils.enterYourChoice);
 		stockAnalysis.getUserInput();
-			
 		System.out.print(Utils.thankyouMessage);
 		
 	}
