@@ -9,15 +9,16 @@ public class StockAnalysis {
 	Scanner sascanner;
 	StockOperations stockOperations;
 	FileOperations fileOperations;
-	String thefilePath;
+	String thefilePath, pathToSerializedFile;
 	TreeMap<Integer, String> mainMenu = new TreeMap<Integer, String>();
 	
 	StockAnalysis(Scanner scanner){
 		thefilePath = System.getProperty("user.dir") + "\\stocks\\";
+		pathToSerializedFile = System.getProperty("user.dir") + "\\ListOfStocks\\";
 		this.sascanner = scanner;
 		mainMenu = createMainMenuList();
 		fileOperations = new FileOperations(thefilePath);
-		stockOperations = new StockOperations(sascanner,fileOperations,thefilePath);
+		stockOperations = new StockOperations(sascanner,fileOperations,thefilePath,pathToSerializedFile);
 	}
 	
 	public static void main(String[] args) {

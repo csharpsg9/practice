@@ -15,12 +15,13 @@ public class StockOperations
 {
 	Scanner stockoperationsScanner;
 	FileOperations fileOperations;
-	String sofilePath;
+	String sofilePath, soSerializedFilePath;
 	
-	public StockOperations(Scanner scanner, FileOperations fileOperations, String filePath){
+	public StockOperations(Scanner scanner, FileOperations fileOperations, String filePath, String pathToSerializedFile){
 		this.stockoperationsScanner = scanner;
 		this.fileOperations = fileOperations;
 		this.sofilePath = filePath;
+		this.soSerializedFilePath = pathToSerializedFile;
 		this.fileOperations = new FileOperations(sofilePath);
 		
 	}
@@ -40,7 +41,7 @@ public class StockOperations
 		
 		int numberOfStocks = getNumberOfStockSymbols();
 		String stockSymbol = "";
-		StockOperations listOfStocks = new StockOperations(stockoperationsScanner, fileOperations, sofilePath);
+		StockOperations listOfStocks = new StockOperations(stockoperationsScanner, fileOperations, sofilePath, soSerializedFilePath);
 		ArrayList<Scanner> userInputs = new ArrayList<Scanner>(numberOfStocks);
 			
 		for (Integer i = 0; i < numberOfStocks; i++) {
@@ -87,7 +88,7 @@ public class StockOperations
 	public void setStockFileList(StockOperations stockList)
 	{
 		try {
-	         FileOutputStream fileOut = new FileOutputStream(Utils.stockFilePath + "//list.ser");
+	         FileOutputStream fileOut = new FileOutputStream(soSerializedFilePath + "//list.ser");
 	         ObjectOutputStream out = new ObjectOutputStream(fileOut);
 	         out.writeObject(stockList.stockFileList);
 	         out.close();
