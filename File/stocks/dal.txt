@@ -1,3 +1,5 @@
 Stock Price History Report
 Tue 11/08/2016 - 10:02:47 PM CST, dal, 44.53
 Wed 06/07/2017 - 06:28:03 PM EDT, dal, 52.27
+Sat 12/29/2018 - 03:02:01 AM EST, dal, 50.18
+Sat 12/29/2018 - 03:02:06 AM EST, dal, 50.18

@@ -22,6 +22,10 @@ public class Utils {
 		System.out.println("Which report do you want to see?\n");
 	}
 	
+	public static void getNumberOfStockSymbolsUserEnters(){
+		System.out.println("How many ticker symbols do you want to enter?\n");
+	}
+	
 	public static SimpleDateFormat getSimpleDateFormat(){
 		SimpleDateFormat dateFormat = new SimpleDateFormat("E MM/dd/yyyy - hh:mm:ss a zzz");
 		return dateFormat;

@@ -2,3 +2,6 @@ Stock Price History Report
 Fri 09/22/2017 - 07:09:40 AM EDT, cmpgy, 21.66
 Fri 12/28/2018 - 09:55:37 PM EST, cmpgy, 20.90
 Fri 12/28/2018 - 10:00:21 PM EST, cmpgy, 20.90
+Fri 12/28/2018 - 10:05:22 PM EST, cmpgy, 20.90
+Sat 12/29/2018 - 02:53:03 AM EST, cmpgy, 20.90
+Sat 12/29/2018 - 03:08:29 AM EST, cmpgy, 20.90

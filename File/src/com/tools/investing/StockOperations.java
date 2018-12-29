@@ -34,7 +34,7 @@ public class StockOperations
 	
 	public int getNumberOfStockSymbols(){
 		
-		System.out.println("How many ticker symbols do you want to enter? ");
+		Utils.getNumberOfStockSymbolsUserEnters();
 		int numberOfSymbols = stockoperationsScanner.nextInt();
 		return numberOfSymbols;
 	}
@@ -108,7 +108,6 @@ public class StockOperations
 	         FileInputStream fileIn = new FileInputStream(soSerializedFilePath + "\\" + savedStockList);
 	         ObjectInputStream in = new ObjectInputStream(fileIn);
 	         userSelectedListOfStocks = (TreeMap<Integer, String>)in.readObject();
-	         //System.out.println("deserialized data");
 	         in.close();
 	         fileIn.close();
 	      }catch(IOException i) {
