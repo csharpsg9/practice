@@ -28,7 +28,6 @@ public class StockAnalysis {
 		Utils.getWelcomeMessage();
 		Utils.getUserSelectionFromMainMenu();
 		stockAnalysis.getUserInput();
-		//stockAnalysis.stockOperations.getUserSelectedStockFileList();
 		Utils.getThankYouMessage();
 		
 	}
@@ -43,10 +42,14 @@ public class StockAnalysis {
 				if (choice == 1) {
 					stockOperations.getStockFileList();
 				} else if (choice == 2) {
-					stockOperations.enterStockSymbol();
+					stockOperations.enterStockSymbol("list.ser");
 				} else if (choice == 3) {
-					stockOperations.getStockPriceFromPreviousUserStockSymbolInputs();
+					stockOperations.getStockPriceFromPreviousUserStockSymbolInputs("list.ser");
 				} else if (choice == 4) {
+					stockOperations.getStockPriceFromPreviousUserStockSymbolInputs("financial.ser");
+				} else if (choice == 5) {
+					stockOperations.getStockPriceFromPreviousUserStockSymbolInputs("watchlist.ser");
+				} else if (choice == 6) {
 					isDisplayed = false;
 				}
 		} while(isDisplayed);
@@ -58,7 +61,9 @@ public class StockAnalysis {
 		mainMenu.put(1, "View Stock File List");
 		mainMenu.put(2, "Enter Stock symbol");
 		mainMenu.put(3, "Get Quotes From Previous Inputs");
-		mainMenu.put(4, "Exit");
+		mainMenu.put(4, "Get Finance Quotes");
+		mainMenu.put(5, "Get Watchlist Quotes");
+		mainMenu.put(6, "Exit");
 		return mainMenu;
 	}
 	

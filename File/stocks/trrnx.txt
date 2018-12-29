@@ -1,3 +1,5 @@
 Stock Price History Report
 Sun 06/18/2017 - 11:01:37 AM EDT, trrnx, 14.76
 Sat 12/22/2018 - 07:27:55 PM EST, trrnx, 12.98
+Fri 12/28/2018 - 09:56:05 PM EST, trrnx, 13.28
+Fri 12/28/2018 - 10:00:24 PM EST, trrnx, 13.28

@@ -1,3 +1,5 @@
 Stock Price History Report
 Fri 09/22/2017 - 07:13:38 AM EDT, su, 34.21
 Wed 12/26/2018 - 02:59:41 PM EST, su, 26.97
+Fri 12/28/2018 - 09:55:59 PM EST, su, 27.70
+Fri 12/28/2018 - 10:00:23 PM EST, su, 27.70

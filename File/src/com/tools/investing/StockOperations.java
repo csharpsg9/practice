@@ -39,7 +39,7 @@ public class StockOperations
 		return numberOfSymbols;
 	}
 	
-	public void enterStockSymbol() {
+	public void enterStockSymbol(String savedStockFileList) {
 		
 		int numberOfStocks = getNumberOfStockSymbols();
 		String stockSymbol = "";
@@ -53,7 +53,7 @@ public class StockOperations
 			listOfStocks.stockFileList.put(i, stockSymbol +".txt");	
 			fileOperations.writeToFile(fileOperations.createFile(stockSymbol,"txt"), Scraper.getStockPrice(stockSymbol));
 		}	
-		listOfStocks.setStockFileList(listOfStocks);
+		listOfStocks.setStockFileList(listOfStocks,savedStockFileList);
 	}
 	
 	public void getStockFileList() {
@@ -87,10 +87,10 @@ public class StockOperations
 		}
 	}
 		
-	public void setStockFileList(StockOperations stockList)
+	public void setStockFileList(StockOperations stockList, String savedStockList)
 	{
 		try {
-	         FileOutputStream fileOut = new FileOutputStream(soSerializedFilePath + "//list.ser");
+	         FileOutputStream fileOut = new FileOutputStream(soSerializedFilePath + "//" + savedStockList);
 	         ObjectOutputStream out = new ObjectOutputStream(fileOut);
 	         out.writeObject(stockList.stockFileList);
 	         out.close();
@@ -100,12 +100,12 @@ public class StockOperations
 	      }
 	}
 	
-	public void getStockPriceFromPreviousUserStockSymbolInputs()
+	public void getStockPriceFromPreviousUserStockSymbolInputs(String savedStockList)
 	{
 		TreeMap<Integer, String> userSelectedListOfStocks = new TreeMap<Integer, String>();
 		
 		try {
-	         FileInputStream fileIn = new FileInputStream(soSerializedFilePath + "\\list.ser");
+	         FileInputStream fileIn = new FileInputStream(soSerializedFilePath + "\\" + savedStockList);
 	         ObjectInputStream in = new ObjectInputStream(fileIn);
 	         userSelectedListOfStocks = (TreeMap<Integer, String>)in.readObject();
 	         //System.out.println("deserialized data");

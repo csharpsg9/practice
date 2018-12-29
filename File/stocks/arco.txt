@@ -3,3 +3,5 @@ Tue 12/04/2018 - 08:33:24 PM EST, arco, 8.30
 Sat 12/22/2018 - 07:25:41 PM EST, arco, 7.78
 Wed 12/26/2018 - 02:49:46 PM EST, arco, 7.64
 Fri 12/28/2018 - 06:17:51 AM EST, arco, 7.81
+Fri 12/28/2018 - 09:55:30 PM EST, arco, 7.85
+Fri 12/28/2018 - 10:00:21 PM EST, arco, 7.85
