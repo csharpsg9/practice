@@ -69,10 +69,10 @@ public class StockOperations
 			System.out.print((i + 1)+ " - " + listOfFiles[i].getName().substring(0, lengthOfFileName - 4).toUpperCase() + "\n");
 		}
 		System.out.println("\n");
-		selectStockFile(stocks);
+		getUserSelectedStockFile(stocks);
 }
 	
-	public void selectStockFile(TreeMap<Integer, String> stocks) {
+	public void getUserSelectedStockFile(TreeMap<Integer, String> stocks) {
 		StockReport stockFileReport = new StockReport(sofilePath); 
 		Utils.getuserSelectedStockReport();
 
@@ -82,7 +82,7 @@ public class StockOperations
 			Integer key = entry.getKey();
 
 			if (decision == key) {
-				stockFileReport.viewStockReport(stocks.get(decision));
+				stockFileReport.getUserSelectedStockReport(stocks.get(decision));
 			}
 		}
 	}
@@ -100,7 +100,7 @@ public class StockOperations
 	      }
 	}
 	
-	public void getStockPriceFromPreviousUserStockSymbolInputs(String savedStockList)
+	public void getPreviousUserStockSymbolInputs(String savedStockList)
 	{
 		TreeMap<Integer, String> userSelectedListOfStocks = new TreeMap<Integer, String>();
 		

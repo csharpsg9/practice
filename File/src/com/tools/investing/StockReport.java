@@ -9,7 +9,7 @@ public class StockReport {
 		this.filePath = filePath;
 	}
 	
-	public void viewStockReport(String fileName) {
+	public void getUserSelectedStockReport(String fileName) {
 		BufferedReader bufferedReader = null;
 
 		try {

@@ -44,15 +44,15 @@ public class StockAnalysis {
 				} else if (choice == 2) {
 					stockOperations.enterStockSymbol("list.ser");
 				} else if (choice == 3) {
-					stockOperations.getStockPriceFromPreviousUserStockSymbolInputs("list.ser");
+					stockOperations.getPreviousUserStockSymbolInputs("list.ser");
 				} else if (choice == 4) {
-					stockOperations.getStockPriceFromPreviousUserStockSymbolInputs("financial.ser");
+					stockOperations.getPreviousUserStockSymbolInputs("financial.ser");
 				} else if (choice == 5) {
-					stockOperations.getStockPriceFromPreviousUserStockSymbolInputs("international.ser");
+					stockOperations.getPreviousUserStockSymbolInputs("international.ser");
 				} else if (choice == 6) {
-					stockOperations.getStockPriceFromPreviousUserStockSymbolInputs("watchlist.ser");
+					stockOperations.getPreviousUserStockSymbolInputs("watchlist.ser");
 				} else if (choice == 7) {
-					stockOperations.getStockPriceFromPreviousUserStockSymbolInputs("technology.ser");
+					stockOperations.getPreviousUserStockSymbolInputs("technology.ser");
 				} else if (choice == 8) {
 					isDisplayed = false;
 				}
