@@ -54,6 +54,8 @@ public class StockAnalysis {
 				} else if (choice == 7) {
 					stockOperations.getPreviousUserStockSymbolInputs("technology.ser");
 				} else if (choice == 8) {
+					stockOperations.getPreviousUserStockSymbolInputs("etf.ser");
+				} else if (choice == 9) {
 					isDisplayed = false;
 				}
 		} while(isDisplayed);
@@ -69,7 +71,8 @@ public class StockAnalysis {
 		mainMenu.put(5, "Get International Quotes");
 		mainMenu.put(6, "Get Watchlist Quotes");
 		mainMenu.put(7, "Get Technology Quotes");
-		mainMenu.put(8, "Exit\n");
+		mainMenu.put(8, "Get ETF Quotes");
+		mainMenu.put(9, "Exit\n");
 		return mainMenu;
 	}
 	
