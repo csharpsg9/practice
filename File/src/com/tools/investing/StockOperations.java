@@ -53,7 +53,7 @@ public class StockOperations
 			listOfStocks.stockFileList.put(i, stockSymbol +".txt");	
 			fileOperations.writeToFile(fileOperations.createFile(stockSymbol,"txt"), Scraper.getStockPrice(stockSymbol));
 		}	
-		listOfStocks.setStockFileList(listOfStocks,savedStockFileList);
+		listOfStocks.setCustomizedStockFileList(listOfStocks,savedStockFileList);
 	}
 	
 	public void getStockFileList() {
@@ -87,7 +87,7 @@ public class StockOperations
 		}
 	}
 		
-	public void setStockFileList(StockOperations stockList, String savedStockList)
+	public void setCustomizedStockFileList(StockOperations stockList, String savedStockList)
 	{
 		try {
 	         FileOutputStream fileOut = new FileOutputStream(soSerializedFilePath + "//" + savedStockList);

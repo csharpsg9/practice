@@ -2,3 +2,4 @@ Stock Price History Report
 Sat 12/29/2018 - 02:59:20 AM EST, intc, 46.75
 Sat 12/29/2018 - 03:00:47 AM EST, intc, 46.75
 Sat 12/29/2018 - 04:20:49 PM EST, intc, 46.75
+Sat 12/29/2018 - 11:29:31 PM EST, intc, 46.75
