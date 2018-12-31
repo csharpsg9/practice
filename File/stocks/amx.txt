@@ -2,3 +2,4 @@ Stock Price History Report
 Fri 09/22/2017 - 07:08:53 AM EDT, amx, 18.40
 Tue 12/25/2018 - 08:37:52 AM EST, amx, 14.13
 Fri 12/28/2018 - 06:08:29 AM EST, amx, 14.10
+Mon 12/31/2018 - 04:29:24 PM EST, amx, 14.25

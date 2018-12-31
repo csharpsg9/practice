@@ -6,7 +6,7 @@ import java.util.TreeMap;
 
 public class StockAnalysis {
 
-	String directoryPath = System.getProperty("user.dir"); 
+	private String directoryPath = System.getProperty("user.dir"); 
 	Scanner sascanner;
 	StockOperations stockOperations;
 	FileOperations fileOperations;
