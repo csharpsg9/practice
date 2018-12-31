@@ -26,6 +26,10 @@ public class Utils {
 		System.out.println("How many ticker symbols do you want to enter?\n");
 	}
 	
+	public static void getStockSymbolFromUser(){
+		System.out.println("Enter a Stock Symbol: ");
+	}
+	
 	public static SimpleDateFormat getSimpleDateFormat(){
 		SimpleDateFormat dateFormat = new SimpleDateFormat("E MM/dd/yyyy - hh:mm:ss a zzz");
 		return dateFormat;

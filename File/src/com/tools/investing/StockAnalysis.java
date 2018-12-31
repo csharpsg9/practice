@@ -44,17 +44,17 @@ public class StockAnalysis {
 				} else if (choice == 2) {
 					stockOperations.enterStockSymbol("list.ser");
 				} else if (choice == 3) {
-					stockOperations.getPreviousUserStockSymbolInputs("list.ser");
+					stockOperations.getStockSymbolInputs("list.ser");
 				} else if (choice == 4) {
-					stockOperations.getPreviousUserStockSymbolInputs("financial.ser");
+					stockOperations.getStockSymbolInputs("financial.ser");
 				} else if (choice == 5) {
-					stockOperations.getPreviousUserStockSymbolInputs("international.ser");
+					stockOperations.getStockSymbolInputs("international.ser");
 				} else if (choice == 6) {
-					stockOperations.getPreviousUserStockSymbolInputs("watchlist.ser");
+					stockOperations.getStockSymbolInputs("watchlist.ser");
 				} else if (choice == 7) {
-					stockOperations.getPreviousUserStockSymbolInputs("technology.ser");
+					stockOperations.getStockSymbolInputs("technology.ser");
 				} else if (choice == 8) {
-					stockOperations.getPreviousUserStockSymbolInputs("etf.ser");
+					stockOperations.getStockSymbolInputs("etf.ser");
 				} else if (choice == 9) {
 					isDisplayed = false;
 				}
@@ -64,8 +64,8 @@ public class StockAnalysis {
 	
 	public TreeMap<Integer, String> createMainMenuList(){
 		TreeMap<Integer, String> mainMenu = new TreeMap<Integer, String>();
-		mainMenu.put(1, "View Stock File List");
-		mainMenu.put(2, "Enter Stock symbol");
+		mainMenu.put(1, "View Stock List");
+		mainMenu.put(2, "Enter Stock symbol(s)");
 		mainMenu.put(3, "Get Previous Input Quotes");
 		mainMenu.put(4, "Get Finance Quotes");
 		mainMenu.put(5, "Get International Quotes");

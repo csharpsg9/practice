@@ -48,7 +48,7 @@ public class StockOperations
 			
 		for (Integer i = 0; i < numberOfStocks; i++) {
 			userInputs.add(new Scanner(System.in));
-			System.out.println("Enter a Stock Symbol: ");
+			Utils.getStockSymbolFromUser();
 			stockSymbol = userInputs.get(i).nextLine();
 			listOfStocks.stockFileList.put(i, stockSymbol +".txt");	
 			fileOperations.writeToFile(fileOperations.createFile(stockSymbol,"txt"), Scraper.getStockPrice(stockSymbol));
@@ -100,7 +100,7 @@ public class StockOperations
 	      }
 	}
 	
-	public void getPreviousUserStockSymbolInputs(String savedStockList)
+	public void getStockSymbolInputs(String savedStockList)
 	{
 		TreeMap<Integer, String> userSelectedListOfStocks = new TreeMap<Integer, String>();
 		
