@@ -38,7 +38,7 @@ public class StockAnalysis {
 		do {
 			displayMainMenu();
 			int choice = sascanner.nextInt();
-
+			
 				if (choice == 1) {
 					stockOperations.getStockFileList();
 				} else if (choice == 2) {

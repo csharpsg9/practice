@@ -34,7 +34,7 @@ public class StockOperations
 	
 	public int getNumberOfStockSymbols(){
 		
-		Utils.getNumberOfStockSymbolsUserEnters();
+		Utils.getNumberOfStockSymbolsMessage();
 		int numberOfSymbols = stockoperationsScanner.nextInt();
 		return numberOfSymbols;
 	}

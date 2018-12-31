@@ -1,3 +1,4 @@
 Stock Price History Report
 Sun 12/30/2018 - 12:36:22 PM EST, inda, 33.36
 Sun 12/30/2018 - 12:37:03 PM EST, inda, 33.36
+Mon 12/31/2018 - 04:07:53 PM EST, inda, 33.20

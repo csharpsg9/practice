@@ -22,7 +22,7 @@ public class Utils {
 		System.out.println("Which report do you want to see?\n");
 	}
 	
-	public static void getNumberOfStockSymbolsUserEnters(){
+	public static void getNumberOfStockSymbolsMessage(){
 		System.out.println("How many ticker symbols do you want to enter?\n");
 	}
 	
