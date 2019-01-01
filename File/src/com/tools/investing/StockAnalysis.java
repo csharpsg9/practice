@@ -7,11 +7,11 @@ import java.util.TreeMap;
 public class StockAnalysis {
 
 	private String directoryPath = System.getProperty("user.dir"); 
-	Scanner sascanner;
-	StockOperations stockOperations;
-	FileOperations fileOperations;
-	String thefilePath, pathToSerializedFile;
-	TreeMap<Integer, String> mainMenu = new TreeMap<Integer, String>();
+	private Scanner sascanner;
+	private StockOperations stockOperations;
+	private FileOperations fileOperations;
+	private String thefilePath, pathToSerializedFile;
+	private TreeMap<Integer, String> mainMenu = new TreeMap<Integer, String>();
 	
 	StockAnalysis(Scanner scanner){
 		thefilePath = directoryPath + "\\stocks\\";
@@ -32,7 +32,7 @@ public class StockAnalysis {
 		
 	}
 	
-	public void getUserInput(){
+	private void getUserInput(){
 		
 		boolean isDisplayed = true;
 		do {
@@ -62,7 +62,7 @@ public class StockAnalysis {
 		sascanner.close();
 	}
 	
-	public TreeMap<Integer, String> createMainMenuList(){
+	private TreeMap<Integer, String> createMainMenuList(){
 		TreeMap<Integer, String> mainMenu = new TreeMap<Integer, String>();
 		mainMenu.put(1, "View Stock List");
 		mainMenu.put(2, "Enter Stock symbol(s)");
@@ -76,7 +76,7 @@ public class StockAnalysis {
 		return mainMenu;
 	}
 	
-	public void displayMainMenu() {
+	private void displayMainMenu() {
 
 		for (Map.Entry<Integer, String> entry : mainMenu.entrySet()) {	
 			Integer key = entry.getKey();
