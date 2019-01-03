@@ -11,7 +11,7 @@ public class Utils {
 	}
 	
 	public static void getUserSelectionFromMainMenu(){
-		System.out.println("Please enter your choice\n");
+		System.out.println("\nPlease enter your choice\n");
 	}
 	
 	public static void getThankYouMessage(){
@@ -19,15 +19,15 @@ public class Utils {
 	}
 	
 	public static void getuserSelectedStockReport(){
-		System.out.println("Which report do you want to see?\n");
+		System.out.println("\nWhich report do you want to see?\n");
 	}
 	
 	public static void getNumberOfStockSymbolsMessage(){
-		System.out.println("How many ticker symbols do you want to enter?\n");
+		System.out.println("\nHow many ticker symbols do you want to enter?\n");
 	}
 	
 	public static void getStockSymbolFromUser(){
-		System.out.println("Enter a Stock Symbol: ");
+		System.out.println("\nEnter a Stock Symbol: ");
 	}
 	
 	public static SimpleDateFormat getSimpleDateFormat(){

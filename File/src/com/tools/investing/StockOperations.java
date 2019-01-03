@@ -105,9 +105,14 @@ public class StockOperations
 		TreeMap<Integer, String> userSelectedListOfStocks = new TreeMap<Integer, String>();
 		
 		try {
+			 
 	         FileInputStream fileIn = new FileInputStream(soSerializedFilePath + "\\" + savedStockList);
 	         ObjectInputStream in = new ObjectInputStream(fileIn);
-	         userSelectedListOfStocks = (TreeMap<Integer, String>)in.readObject();
+	    //   userSelectedListOfStocks = (TreeMap<Integer, String>)in.readObject();
+	         TreeMap<?,?> temp = (TreeMap<?,?>)in.readObject();
+	         for (Map.Entry<?,?> entry : temp.entrySet()) {
+	        	 userSelectedListOfStocks.put((Integer)entry.getKey(), (String)entry.getValue());
+	 		}
 	         in.close();
 	         fileIn.close();
 	      }catch(IOException i) {
